@@ -1,0 +1,62 @@
+{
+  "name": "slice-array",
+  "version": "0.0.1",
+  "description": "A collection of utility functions to slice an array into sub-arrays",
+  "repository": "nam288/slice-arr",
+  "main": "dist/src",
+  "scripts": {
+    "build": "tsc",
+    "test": "xo && nyc mocha \"./dist/test/**/*.js\"",
+    "prepare": "npm run build && npm test"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "types": "dist/src",
+  "files": [
+    "dist/src"
+  ],
+  "issue": "https://github.com/nam288/slice-arr/issues",
+  "keywords": [
+    "utility",
+    "array",
+    "chunk",
+    "split",
+    "group",
+    "slice",
+    "seperate"
+  ],
+  "author": {
+    "name": "Nam Hoang Le",
+    "email": "drnam288@gmail.com",
+    "url": "https://github.com/nam288"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/chai": "^4.2.16",
+    "@types/mocha": "^8.2.2",
+    "chai": "^4.3.4",
+    "mocha": "^8.3.2",
+    "nyc": "^15.1.0",
+    "typescript": "^4.2.3",
+    "xo": "^0.38.2"
+  },
+  "xo": {
+    "prettier": true,
+    "printWidth": 120,
+    "rules": {
+      "unicorn/no-for-loop": "off",
+      "unicorn/filename-case": "off"
+    }
+  },
+  "nyc": {
+    "reporter": [
+      "text",
+      "html",
+      "lcov"
+    ],
+    "extension": [
+      ".ts"
+    ]
+  }
+}

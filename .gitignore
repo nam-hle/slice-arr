@@ -1,0 +1,10 @@
+node_modules/
+dist/
+coverage/
+
+package-lock.json
+.nyc_output
+.idea
+*.iml
+.DS_Store
+*.tgz
